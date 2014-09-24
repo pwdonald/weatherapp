@@ -1,0 +1,47 @@
+{
+  "name": "MongoTSBoilerplate",
+  "version": "0.0.1",
+  "description": "This is a boilerplate backend using MongoDB and TypeScript",
+  "main": "server/server.js",
+  "private": false,
+  "author": {
+    "name": "Platypi",
+    "email": "support@getplatypi.com"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/grunt-cli/bin/grunt install"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "compression": "latest",
+    "connect-mongo": "latest",
+    "cookie-parser": "latest",
+    "crypto": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "lusca": "latest",
+    "mongoose": "latest",
+    "morgan": "latest"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "deamdify": "latest",
+    "grunt": "latest",
+    "grunt-browserify": "latest",
+    "grunt-cli": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-exorcise": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-shell": "latest",
+    "grunt-tslint": "latest",
+    "grunt-typescript": "latest",
+    "tsd": "latest"
+  }
+}
