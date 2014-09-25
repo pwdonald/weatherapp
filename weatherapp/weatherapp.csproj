@@ -17,12 +17,32 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
-    <Content Include="index.html" />
+    <Content Include="public\common\less\style.css">
+      <DependentUpon>style.less</DependentUpon>
+    </Content>
+    <Content Include="public\index.html" />
+    <Content Include="public\lib\platypus\platypus.js" />
+    <Content Include="public\polyfills.js" />
+    <Content Include="public\scripts.js" />
+    <Content Include="public\common\less\style.less" />
+    <Content Include="public\common\less\style.css.map">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <None Include="public\_references.js" />
+    <Content Include="server\config\config.js" />
+    <Content Include="server\config\express.js" />
+    <Content Include="server\config\middleware\session.js" />
+    <Content Include="server\config\routes.js" />
+    <Content Include="server\server.js" />
+    <Content Include="server\utils\format.js" />
+    <Content Include="server\utils\iformattedresponse.js" />
+    <Content Include="server\utils\iremovelistener.js" />
+    <Content Include="server\utils\utils.js" />
+    <None Include="server\_references.js" />
     <Content Include="web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <Content Include="server\config\env\development.json" />
+    <Content Include="server\config\env\production.json" />
+    <Content Include="server\views\error.ejs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -31,6 +51,40 @@
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="public\app\app.ts" />
+    <TypeScriptCompile Include="public\lib\platypus\platypus.ts" />
+    <TypeScriptCompile Include="public\main.ts" />
+    <TypeScriptCompile Include="public\_references.ts" />
+    <TypeScriptCompile Include="server\config\config.ts" />
+    <TypeScriptCompile Include="server\config\express.ts" />
+    <TypeScriptCompile Include="server\config\middleware\session.ts" />
+    <TypeScriptCompile Include="server\config\routes.ts" />
+    <TypeScriptCompile Include="server\db\connection.ts" />
+    <TypeScriptCompile Include="server\models\base.model.ts" />
+    <TypeScriptCompile Include="server\server.ts" />
+    <TypeScriptCompile Include="server\typings\express-session\express-session.d.ts" />
+    <TypeScriptCompile Include="server\typings\express\express.d.ts" />
+    <TypeScriptCompile Include="server\typings\mongoose\mongoose.d.ts" />
+    <TypeScriptCompile Include="server\typings\node\node.d.ts" />
+    <TypeScriptCompile Include="server\typings\tsd.d.ts" />
+    <TypeScriptCompile Include="server\utils\format.ts" />
+    <TypeScriptCompile Include="server\utils\iformattedresponse.ts" />
+    <TypeScriptCompile Include="server\utils\iremovelistener.ts" />
+    <TypeScriptCompile Include="server\utils\utils.ts" />
+    <TypeScriptCompile Include="server\_references.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\assets\fonts\" />
+    <Folder Include="public\assets\img\" />
+    <Folder Include="public\common\controls\" />
+    <Folder Include="public\common\injectables\" />
+    <Folder Include="public\models\" />
+    <Folder Include="public\repositories\" />
+    <Folder Include="public\services\" />
+    <Folder Include="public\viewcontrols\" />
+    <Folder Include="server\controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
