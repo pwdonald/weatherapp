@@ -1,6 +1,6 @@
 ﻿/// <reference path="../openweather.interfaces.ts" />
 
-export interface ICurrentWeather {
+interface ICurrentWeather {
     coord: ICoordinate;
     sys: ISys;
     weather: Array<IWeather>;

@@ -6,4 +6,5 @@
 /// <reference path="main/coord.interface.ts" />
 /// <reference path="city/cityitem.interface.ts" />
 /// <reference path="city/cityresults.interface.ts" />
+/// <reference path="currentweather/currentweather.interface.ts" />
  
