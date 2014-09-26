@@ -1,25 +1,14 @@
-﻿/// <reference path="cityweather.interface.ts" />
+﻿/// <reference path="../openweather.interfaces.ts" />
+
 
 interface ICityItem {
     id: number;
     name: string;
-    coord: {
-        lon: number;
-        lat: number;
-    };
+    coord: ICoordinate;
     main: IMain;
     dt: number;
-    wind: {
-        speed: number;
-        deg: number;
-        var_beg: number;
-        var_end: number;
-    };
-    sys: {
-        country: string;
-    };
-    clouds: {
-        all: number;
-    };
-    weather: Array<ICityWeather>;
+    wind: IWind;
+    sys: ISys;
+    clouds: ICloud;
+    weather: Array<IWeather>;
 }

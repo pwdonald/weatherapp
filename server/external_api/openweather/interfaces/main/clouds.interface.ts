@@ -1,0 +1,3 @@
+﻿interface ICloud {
+    all: number;
+}

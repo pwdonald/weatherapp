@@ -1,26 +1,15 @@
-﻿/// <reference path="../main/main.interface.ts" />
+﻿/// <reference path="../openweather.interfaces.ts" />
 
 export interface ICurrentWeather {
-    coord: {
-        lon: number;
-        lat: number;
-    };
-    sys: {
-        type: number;
-        id: number;
-        message: number;
-        country: string;
-        sunrise: number;
-        sunset: number;
-    };
-    weather: {
-        id: number;
-        main: string;
-        description: string;
-        icon: string;
-    };
+    coord: ICoordinate;
+    sys: ISys;
+    weather: IWeather;
     base: string;
     main: IMain;
+    wind: IWind;
+    clouds: ICloud;
+    dt: number;
+    id: number;
+    name: string;
+    cod: number;
 }
-
-
