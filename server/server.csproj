@@ -41,8 +41,13 @@
     <TypeScriptCompile Include="external_api\base.api.ts" />
     <TypeScriptCompile Include="external_api\openweather\citylookup.api.ts" />
     <TypeScriptCompile Include="external_api\openweather\curerntweather.api.ts" />
-    <TypeScriptCompile Include="external_api\openweather\models\cityresults.model.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\city\cityitem.interface.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\city\cityresults.interface.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\city\cityweather.interface.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\currentweather\currentweather.interface.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\main\main.interface.ts" />
     <TypeScriptCompile Include="external_api\openweather\openweather.api.ts" />
+    <TypeScriptCompile Include="external_api\openweather\interfaces\openweather.interfaces.ts" />
     <TypeScriptCompile Include="server.ts" />
     <TypeScriptCompile Include="typings\es6-promise\es6-promise.d.ts" />
     <TypeScriptCompile Include="typings\express-session\express-session.d.ts" />
@@ -60,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers\" />
+    <Folder Include="external_api\openweather\models\" />
     <Folder Include="models\" />
   </ItemGroup>
   <PropertyGroup>
