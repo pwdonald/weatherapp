@@ -3,7 +3,7 @@
 export interface ICurrentWeather {
     coord: ICoordinate;
     sys: ISys;
-    weather: IWeather;
+    weather: Array<IWeather>;
     base: string;
     main: IMain;
     wind: IWind;
