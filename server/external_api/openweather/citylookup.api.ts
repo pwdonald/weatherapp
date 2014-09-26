@@ -13,7 +13,7 @@ class CityLookupApi extends OpenWeatherApi {
         return this.get('find', query, apiToken);
     };
 
-    lookupCityByCoords = (apiToken: string, cityLon: number, cityLat: number): Thenable<ICityResults> => {
+    lookupCityByCoordinates = (apiToken: string, cityLon: number, cityLat: number): Thenable<ICityResults> => {
         var query = {
             lat: cityLat,
             lon: cityLon
