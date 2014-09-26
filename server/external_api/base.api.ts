@@ -1,10 +1,10 @@
-﻿/// <reference path="../../typings/tsd.d.ts" />
+﻿/// <reference path="../typings/tsd.d.ts" />
 
 import request = require('request');
 import https = require('https');
 import PromiseStatic = require('es6-promise');
 import qs = require('querystring');
-import utils = require('../../utils/utils');
+import utils = require('../utils/utils');
 
 /*
  * All API calls should go through this module to prevent too many calls being made per minute.
@@ -34,6 +34,7 @@ class BaseApi {
     static get = (url: string, querystr?: Object, token?: string): Thenable<any> => {
         querystr['APPID'] = (!utils.isNull(token) ? token : null);
         url += qs.stringify(querystr);
+        console.log(url);
         return new Promise((resolve, reject) => {
             request.get(url, (err, res, body) => {
                 if (utils.isObject(err)) {

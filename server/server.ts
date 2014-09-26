@@ -12,7 +12,7 @@ var app = express();
 configureExpress(app);
 
 var server = app.listen(config.port, () => {
-	console.log('Listening on address %d.', server.address().port);
+    console.log('Listening on address %d.', server.address().port);
 });
 
 export = app;

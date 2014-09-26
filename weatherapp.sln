@@ -3,11 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "weatherapp", "weatherapp\weatherapp.csproj", "{BD59A23F-3E49-4417-A61B-E60C60C6B33E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77E03B99-67B6-4E14-8338-8D12F7E10CD9}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		apitokens.json = apitokens.json
 		weatherapp\Gruntfile.js = weatherapp\Gruntfile.js
 		weatherapp\package.json = weatherapp\package.json
 		weatherapp\tsd.public.json = weatherapp\tsd.public.json
@@ -15,16 +14,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		weatherapp\tslint.json = weatherapp\tslint.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "public", "public\public.csproj", "{DA2AA2DB-AF4D-47F2-B174-2FD540B8FBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csproj", "{85F3FBF6-17D1-4960-A300-D3747835CDCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD59A23F-3E49-4417-A61B-E60C60C6B33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD59A23F-3E49-4417-A61B-E60C60C6B33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD59A23F-3E49-4417-A61B-E60C60C6B33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD59A23F-3E49-4417-A61B-E60C60C6B33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2AA2DB-AF4D-47F2-B174-2FD540B8FBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2AA2DB-AF4D-47F2-B174-2FD540B8FBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2AA2DB-AF4D-47F2-B174-2FD540B8FBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2AA2DB-AF4D-47F2-B174-2FD540B8FBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F3FBF6-17D1-4960-A300-D3747835CDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F3FBF6-17D1-4960-A300-D3747835CDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F3FBF6-17D1-4960-A300-D3747835CDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F3FBF6-17D1-4960-A300-D3747835CDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
