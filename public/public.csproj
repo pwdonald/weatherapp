@@ -17,14 +17,12 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\app.js" />
     <Content Include="polyfills.js" />
     <Content Include="scripts.js" />
     <Content Include="style.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

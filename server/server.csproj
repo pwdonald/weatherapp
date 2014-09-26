@@ -17,41 +17,13 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="config\config.js" />
-    <Content Include="config\express.js" />
     <Content Include="config\middleware\session.js" />
-    <Content Include="config\routes.js" />
-    <Content Include="db\connection.js" />
-    <Content Include="external_api\base.api.js" />
-    <Content Include="external_api\openweather\base.api.js" />
-    <Content Include="external_api\openweather\citylookup.api.js" />
-    <Content Include="external_api\openweather\curerntweather.api.js" />
-    <Content Include="external_api\openweather\models\cityresults.model.js" />
-    <Content Include="external_api\openweather\openweather.api.js" />
-    <Content Include="utils\format.js" />
-    <Content Include="utils\iformattedresponse.js" />
-    <Content Include="utils\iremovelistener.js" />
-    <Content Include="utils\utils.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="config\config.js.map" />
     <Content Include="config\env\development.json" />
     <Content Include="config\env\production.json" />
-    <Content Include="config\express.js.map" />
     <Content Include="config\middleware\session.js.map" />
-    <Content Include="config\routes.js.map" />
-    <Content Include="db\connection.js.map" />
-    <Content Include="external_api\base.api.js.map" />
-    <Content Include="external_api\openweather\base.api.js.map" />
-    <Content Include="external_api\openweather\citylookup.api.js.map" />
-    <Content Include="external_api\openweather\curerntweather.api.js.map" />
-    <Content Include="external_api\openweather\models\cityresults.model.js.map" />
-    <Content Include="external_api\openweather\openweather.api.js.map" />
-    <Content Include="utils\format.js.map" />
-    <Content Include="utils\iformattedresponse.js.map" />
-    <Content Include="utils\iremovelistener.js.map" />
-    <Content Include="utils\utils.js.map" />
     <Content Include="views\error.ejs" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
