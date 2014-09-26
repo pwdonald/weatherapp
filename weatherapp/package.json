@@ -1,12 +1,12 @@
 {
-  "name": "MongoTSBoilerplate",
+  "name": "WeatherApp",
   "version": "0.0.1",
-  "description": "This is a boilerplate backend using MongoDB and TypeScript",
+  "description": "Sample app using PlatypusTS (getplatypi.com)",
   "main": "server/server.js",
   "private": false,
   "author": {
-    "name": "Platypi",
-    "email": "support@getplatypi.com"
+    "name": "Donald Jones",
+    "email": "jones.donald@gmail.com"
   },
   "scripts": {
     "postinstall": "node node_modules/grunt-cli/bin/grunt install"
@@ -42,6 +42,8 @@
     "grunt-shell": "latest",
     "grunt-tslint": "latest",
     "grunt-typescript": "latest",
-    "tsd": "latest"
+    "tsd": "latest",
+    "request": "latest",
+    "es6-promise":  "latest"
   }
 }
