@@ -1,4 +1,4 @@
 ﻿interface ICoordinate {
-    lon: number;
-    lat: number;
+    lon?: number;
+    lat?: number;
 }
