@@ -1,7 +1,8 @@
-﻿/// <reference path="../../typings/tsd.d.ts" />
+﻿/// <reference path="../../../_references.ts" />
 
-import utils = require('../../utils/utils');
-import BaseApi = require('../base.api');
+
+import utils = require('../../../utils/utils');
+import BaseApi = require('../../base.api');
 
 class OpenWeatherApi extends BaseApi {
     baseUri = 'http://api.openweathermap.org/data/';

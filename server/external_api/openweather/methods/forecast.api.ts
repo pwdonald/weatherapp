@@ -1,8 +1,7 @@
-﻿/// <reference path="../../typings/tsd.d.ts" />
-/// <reference path="../../_references.ts" />
+﻿/// <reference path="../../../_references.ts" />
 
 import OpenWeatherApi = require('./openweather.api');
-import utils = require('../../utils/utils');
+import utils = require('../../../utils/utils');
 
 class ForecastApi extends OpenWeatherApi {
     getForecastByCityName (apiToken: string, cityName: string, days?: number) {
