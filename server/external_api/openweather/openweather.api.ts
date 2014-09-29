@@ -11,7 +11,7 @@ class OpenWeatherApi extends BaseApi {
     apiVersion = '2.5';
     mode = 'json';
 
-    get = (methodName: string, qs: any, token: string): Thenable<any> => {
+    get (methodName: string, qs: any, token: string): Thenable<any> {
         this.baseUri += this.apiVersion + '/' + methodName + '?';
 
         if (utils.isNull(qs.units)) {
@@ -23,7 +23,7 @@ class OpenWeatherApi extends BaseApi {
         }
 
         return BaseApi.getApiCall(this.baseUri, qs, token);
-    };
+    }
 }
 
 export = OpenWeatherApi;
