@@ -9,4 +9,4 @@ interface IForecastItem {
     wind?: IWind;
     sys?: ISys;
     dt_txt?: string;
-} 
+}

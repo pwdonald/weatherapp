@@ -6,4 +6,4 @@ interface ITemp {
     night?: number;
     even?: number;
     morn?: number;
-} 
+}
