@@ -22,7 +22,9 @@
     "express-session": "latest",
     "lusca": "latest",
     "mongoose": "latest",
-    "morgan": "latest"
+    "morgan": "latest",
+    "request": "latest",
+    "es6-promise":  "latest"
   },
   "devDependencies": {
     "browserify": "latest",
@@ -42,8 +44,6 @@
     "grunt-shell": "latest",
     "grunt-tslint": "latest",
     "grunt-typescript": "latest",
-    "tsd": "latest",
-    "request": "latest",
-    "es6-promise":  "latest"
+    "tsd": "latest"
   }
 }
